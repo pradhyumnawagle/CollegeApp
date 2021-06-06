@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".InitialActivity">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+
+    <TextView
+        android:id="@+id/myCollege_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="@string/my_college"
+        android:textColor="@color/primary_buttons_text"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@id/initial_login_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/initial_logo"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/initial_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@id/myCollege_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_page_toolbar"
+        app:srcCompat="@mipmap/mycollegelogo" />
+
+    <Button
+        android:id="@+id/initial_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_buttons"
+        android:padding="10dp"
+        android:text="@string/login"
+        android:textColor="@color/primary_buttons_text"
+        app:layout_constraintBottom_toTopOf="@id/initial_signup_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myCollege_header" />
+
+    <Button
+        android:id="@+id/initial_signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@color/primary_buttons"
+        android:padding="10dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/primary_buttons_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/initial_login_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

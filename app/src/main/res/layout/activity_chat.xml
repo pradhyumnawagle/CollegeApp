@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include android:id="@+id/chat_toolbar"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintBottom_toTopOf="@id/private_conversation_list_users"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_conversation_list_users"
+        android:layout_width="match_parent"
+        android:layout_height="685dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@id/write_message_constraint_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/write_message_constraint_view"
+        android:layout_width="409dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/send_image_message_btn"
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/camera"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/write_message_constraint_view"
+            app:layout_constraintBottom_toBottomOf="@id/write_message_constraint_view"/>
+
+        <EditText
+            android:id="@+id/write_message_input_text"
+            android:layout_width="285dp"
+            android:layout_height="52dp"
+            android:hint="Write your message here..."
+            android:maxLines="5"
+            android:padding="10dp"
+            app:layout_constraintLeft_toRightOf="@id/send_image_message_btn"
+            app:layout_constraintRight_toLeftOf="@id/send_message_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/send_message_btn"
+            android:layout_width="64dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/send"
+            app:layout_constraintLeft_toRightOf="@id/write_message_input_text"
+            app:layout_constraintTop_toTopOf="@id/write_message_constraint_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

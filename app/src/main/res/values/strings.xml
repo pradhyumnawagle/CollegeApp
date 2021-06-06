@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CollegeApp</string>
+    <string name="create_account">Create Account</string>
+    <string name="email_field">Email</string>
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="logout">Logout</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="users">Users</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="college_app">College App</string>
+    <string name="my_college">My College</string>
+    <string name="login">Login</string>
+
+
+    <string name="login2">Already a User?   Login</string>
+    <string name="signup2">Not a User yet?   Sign Up</string>
+    <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="login_using_phone">Login using phone?</string>
+    <string name="need_a_new_account">Need a new account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="search_user">Search User</string>
+    <string name="bio">Bio...</string>
+    <string name="username">username</string>
+    <string name="update">Update</string>
+    <string name="create_group">Create Group</string>
+    <string name="search_group">Search Group</string>
+    <string name="write_your_message">Write your message...</string>
+    <string name="send_message">Send Message Request</string>
+    <string name="connection_requests">Connection Requests</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search_chat">Search Chat...</string>
+
+    <string-array name="college_list">
+        <item>Ramapo</item>
+        <item>Rutgers</item>
+        <item>Montclair</item>
+        <item>NJIT</item>
+        <item>Kean</item>
+        <item>TCNJ</item>
+    </string-array>
+
+</resources>
